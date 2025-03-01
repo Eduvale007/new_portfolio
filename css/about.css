@@ -1,0 +1,49 @@
+
+.container_amarelo {
+    display: flex;
+    justify-content: center;
+    
+    gap: 30px;
+      width: 100vw; /* Garante que ocupe toda a largura */
+      box-sizing: border-box; /* Garante que padding e border não afetem o tamanho do contêiner */
+    }
+    
+    /* Estilo para o fundo amarelo */
+    .container_amarelo {
+   /* Cor de fundo amarela */
+      padding: 5rem;
+  
+    }
+  
+    img{
+      max-width: 300px;
+    }
+    
+    /* Estilo para o p */
+    .fade-in-left{
+      font-size: 1.5rem;
+      color: #594a4e;
+      margin-top: 5px; /* Dá um espaçamento entre o título e o parágrafo */
+      text-align: left; /* Alinha o parágrafo à esquerda também */
+      max-width: 500px;
+    }
+    
+    /* Animação para a entrada da esquerda */
+    @keyframes fadeInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-500px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    
+    /* Aplicando animação */
+    .fade-in-left {
+      animation: fadeInLeft 1s ease-out forwards;
+    }
+    
+
+
