@@ -8,6 +8,7 @@ body{
     background-color: #faeee7;
     font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
+  overflow-x: hidden;
 }
 
 .title{
@@ -52,8 +53,8 @@ body{
 
 
 .btn {
-  background-color: transparent; /* Centro vazio */
-  border: 2px solid lightcoral;  /* Borda de 2px com a cor lightcoral */
+  background-color: transparent; 
+  border: 2px solid lightcoral;  
   padding: 1rem;
   font-size: 1rem;
   width: 10em;
@@ -61,7 +62,7 @@ body{
   color: #594a4e;
   box-shadow: 0 0.4rem #dfd9d9;
   cursor: pointer;
-  transition: all 0.3s ease; /* Transição suave em todos os estados */
+  transition: all 0.3s ease; 
   text-decoration: none;
  }
  
@@ -69,7 +70,7 @@ body{
   color: white;
   box-shadow: 0 0.2rem #dfd9d9;
   transform: translateY(0.2rem);
-  border-color: white; /* Borda branca quando pressionado */
+  border-color: white; 
  }
  
  .btn:hover:not(:disabled) {
@@ -109,28 +110,27 @@ body{
       flex-direction: column;
       align-items: center;
     gap: 30px;
-      width: 100vw; /* Garante que ocupe toda a largura */
-      box-sizing: border-box; /* Garante que padding e border não afetem o tamanho do contêiner */
+      width: 100vw; 
+      box-sizing: border-box; 
     }
 
-    .teste{
-      white-space: pre-line;
-    }
+ 
   }
 
 @media (max-width: 768px) {
-  .container_amarelo {
-    display: flex;
-    justify-content: center;
-      flex-direction: column;
-      align-items: center;
-    gap: 30px;
-      width: 100vw; /* Garante que ocupe toda a largura */
-      box-sizing: border-box; /* Garante que padding e border não afetem o tamanho do contêiner */
-    }
+  .fade-in-left{
+    font-size: 20px;
+    width: 320px;
+   
+  }
 
     img{
       max-width: 320px;
     }
-    
+
+    .typewriter-animation {
+     font-size: 25px;
+    }
 }
+
+
